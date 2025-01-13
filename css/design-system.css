@@ -1,0 +1,68 @@
+:root {
+    /* Primary Color Palette */
+    --primary-color: #3498db;     /* Bright Blue */
+    --secondary-color: #2ecc71;   /* Emerald Green */
+    --accent-color: #e74c3c;      /* Vibrant Red */
+    
+    /* Neutral Colors */
+    --text-color: #2c3e50;        /* Dark Blue-Gray */
+    --background-color: #f4f6f9;  /* Light Gray-Blue */
+    
+    /* Typography */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    
+    /* Shadows and Elevations */
+    --shadow-subtle: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-medium: 0 4px 6px rgba(0,0,0,0.15);
+    --shadow-strong: 0 10px 20px rgba(0,0,0,0.2);
+    
+    /* Transitions */
+    --transition-fast: all 0.2s ease;
+    --transition-medium: all 0.3s ease;
+}
+
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+/* Reusable Components */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow-medium);
+    padding: 20px;
+    transition: var(--transition-fast);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: color-mix(in srgb, var(--primary-color) 90%, black);
+}
