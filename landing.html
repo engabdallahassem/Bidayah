@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bidayah - Your Educational Journey Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .slogan {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .platform-description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .registration-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px;
+            background-color: #f4f6f9;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png.png" alt="Bidayah Logo" class="logo" style="background: none;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="logo-container">
+                <img src="assets/logo.png.png" alt="Bidayah Logo" style="max-width: 300px; background: none;">
+            </div>
+            <h1 class="slogan">Bidayah: With You All the Way</h1>
+            <p class="platform-description">
+                An AI-powered, cloud-based digital student portfolio that seamlessly connects schools, 
+                universities, and the job market, creating a unified educational journey. Through adaptive 
+                learning and AI-driven career guidance, we empower students to discover their potential 
+                while providing institutions with actionable insights for personalized support and future-ready success.
+            </p>
+            <div class="registration-options">
+                <a href="index.html" class="btn btn-primary">Student Login</a>
+                <a href="institution-login.html" class="btn btn-secondary">Institution Login</a>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Adaptive Learning</h3>
+                <p>Personalized learning paths tailored to individual student needs and potential.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Performance Analytics</h3>
+                <p>Comprehensive insights into student progress, skills, and learning trends.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Career Guidance</h3>
+                <p>AI-driven recommendations for career development and future opportunities.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Bidayah. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile - Bidayah LMS</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="student-profile-container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="assets/logo.png.png" alt="Bidayah Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#personal-info"><i class="fas fa-user"></i> Personal Information</a></li>
+                    <li><a href="#learning-journey"><i class="fas fa-road"></i> Learning Journey</a></li>
+                    <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="#courses"><i class="fas fa-book"></i> Enrolled Courses</a></li>
+                    <li><a href="#progress"><i class="fas fa-chart-line"></i> Progress Tracking</a></li>
+                    <li><a href="student-analytics.html"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>Student Profile</h1>
+                <div class="user-actions">
+                    <button class="btn btn-primary">Edit Profile</button>
+                    <button class="btn btn-secondary">Settings</button>
+                </div>
+            </header>
+
+            <section id="personal-info" class="profile-section">
+                <div class="card">
+                    <div class="profile-header">
+                        <img src="assets/student-avatar.jpg" alt="Student Avatar" class="profile-avatar">
+                        <div class="profile-details">
+                            <h2>Ahmed Mohammed</h2>
+                            <p>Computer Science Student</p>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> ahmed.mohammed@example.com</p>
+                                <p><i class="fas fa-phone"></i> +966 55 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-bio">
+                        <h3>About Me</h3>
+                        <p>Passionate computer science student with a keen interest in artificial intelligence and machine learning. Seeking to develop innovative solutions that can make a positive impact on society.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learning-journey" class="profile-section hidden">
+                <div class="card">
+                    <h2>Learning Journey</h2>
+                    <div class="journey-timeline">
+                        <div class="journey-step completed">
+                            <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="step-content">
+                                <h3>Foundational Programming</h3>
+                                <p>Completed basic programming courses in Python and JavaScript</p>
+                                <span class="date">Jan 2023 - May 2023</span>
+                            </div>
+                        </div>
+                        <div class="journey-step in-progress">
+                            <div class="step-icon"><i class="fas fa-code"></i></div>
+                            <div class="step-content">
+                                <h3>Web Development Specialization</h3>
+                                <p>Currently learning advanced web development techniques</p>
+                                <span class="date">Jun 2023 - Present</span>
+                            </div>
+                        </div>
+                        <div class="journey-step upcoming">
+                            <div class="step-icon"><i class="fas fa-brain"></i></div>
+                            <div class="step-content">
+                                <h3>AI and Machine Learning</h3>
+                                <p>Planned specialization in artificial intelligence</p>
+                                <span class="date">Jan 2024 - Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="achievements" class="profile-section hidden">
+                <div class="card">
+                    <h2>Achievements</h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <i class="fas fa-medal"></i>
+                            <h3>Programming Fundamentals</h3>
+                            <p>Completed with Distinction</p>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Hackathon Winner</h3>
+                            <p>Best Innovative Solution 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/student-profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration - Bidayah</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="registration-container">
+        <form id="registrationForm" class="registration-form">
+            <div class="logo-container">
+                <img src="assets/logo.png.png" alt="Bidayah Logo" class="logo">
+            </div>
+            
+            <h2>Create Student Account</h2>
+            
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="educationLevel">Education Level</label>
+                <select id="educationLevel" required>
+                    <option value="">Select Education Level</option>
+                    <option value="highSchool">High School</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="register-btn">Create Account</button>
+            
+            <div class="additional-options">
+                <a href="index.html" class="login-link">Already have an account? Login</a>
+                <a href="landing.html" class="back-to-home">Back to Home</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/registration.js"></script>
+</body>
+</html>
